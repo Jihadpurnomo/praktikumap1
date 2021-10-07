@@ -1,0 +1,63 @@
+#include <iostream>
+	
+	using namespace	std;
+	
+	int main(){
+		cout << "========================================" << endl;
+		cout << "operasi menghitung gaji karyawan" << endl;;
+		cout << "========================================" << endl;
+		cout << endl;
+		
+		
+		string nama;
+		int jam;
+		char gol;
+		
+		cout<<"nama karyawan:";
+		cin>>nama;
+		cout<<"golongan karyawan:";
+		cin>>gol;
+		cout<<"jam karyawan:";
+		cin>>jam;
+		
+		switch(gol){
+		case '1' :
+			if (jam<=150){
+				cout<<"gaji tetap :1000000";
+			}else(jam>150);
+			cout<<"gaji lembur :"<<(jam-150)*10000<<endl;
+			cout<<"total gaji :" <<1000000+((jam-150)*10000);
+			break;
+		case '2' :
+				if (jam<=150){
+				cout<<"gaji pokok:2000000";
+				cout<<"gaji lembur:"<<(jam-150)*20000;
+			}else(jam>150);
+			cout<<"gaji lembur :"<<(jam-150)*20000<<endl;
+			cout<<"total gaji" <<2000000+((jam-150)*20000);
+			break;
+		case '3' :
+				if (jam<=150){
+				cout<<"gaji tetap:3000000";
+			}else(jam>150);
+			cout<<"gaji lembur :"<<(jam-150)*30000<<endl;
+			cout<<"total gaji :" <<3000000+((jam-150)*30000);
+			break;
+		case '4' :
+				if (jam<=150){
+				cout<<"gaji tetap :4000000";
+			}else(jam>150);
+			cout<<"gaji lembur :"<<(jam-150)*40000<<endl;
+			cout<<"total gaji :" <<4000000+((jam-150)*40000);
+			break;
+		case '5' :
+				if (jam<=150){
+				cout<<"gaji tetap :5000000";
+				cout<<" gaji lembur :"<<(jam-150)*50000;
+			}else(jam>150);
+			cout<<"gaji lembur :"<<(jam-150)*50000<<endl;
+			cout<<"total gaji  :"<<5000000+((jam-150)*50000);
+			break;
+				}
+		
+	}
